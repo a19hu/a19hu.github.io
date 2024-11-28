@@ -14,30 +14,31 @@ import {
 const milestones = [
     {
         id: 1,
-        date: 'MARCH, 2015',
-        title: 'Completed 10th',
-        description: `fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.`
+        date: 'Jun/24- ongoing',
+        title: 'KBCLOUDTECH PRIVATE LIMITED',
+        description: `Developed and tested frontend applications using Next.js and Flutter, integrating Firebase for real-time databases,
+authentication, and push notifications.`
     },
     {
         id: 2,
-        date: 'Feb, 2017',
-        title: 'Completed 12th',
-        description: `fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.`
+        date: 'Jan/24',
+        title: 'Prometeo',
+        description: `Designed and developed a dynamic and interactive website interface for the Prometeo fest.`
     },
-    {
-        id: 3,
-        date: 'July 30, 2020',
-        title: 'Completed Graduation',
-        description:
-            'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
-    },
-    {
-        id: 4,
-        date: 'July 30, 2022',
-        title: 'Post Grad Ongoing',
-        description:
-            'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
-    }
+    // {
+    //     id: 3,
+    //     date: 'July 30, 2020',
+    //     title: 'Completed Graduation',
+    //     description:
+    //         'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
+    // },
+    // {
+    //     id: 4,
+    //     date: 'July 30, 2022',
+    //     title: 'Post Grad Ongoing',
+    //     description:
+    //         'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
+    // }
 ];
 
 const Education = () => {

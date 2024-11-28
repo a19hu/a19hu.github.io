@@ -35,6 +35,9 @@ export default function SkillsProjects() {
 
                         <Wrap>
                             <CustomSkillTag skill={'Python'} />
+                            <CustomSkillTag skill={'C'} />
+                            <CustomSkillTag skill={'C++'} />
+                            <CustomSkillTag skill={'bash'} />
                             <CustomSkillTag skill={'Javascript'} />
                             <CustomSkillTag skill={'Dart'} />
                             <CustomSkillTag skill={'HTML'} />
@@ -42,31 +45,38 @@ export default function SkillsProjects() {
                         </Wrap>
                     </Box>
                     <Box my={2}>
-                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}> Frameworks</Heading>
+                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}>Web/App Devlopment</Heading>
                         <Box orientation='horizontal' bgColor='gray.300' my={3} height={0.2} />
                         <Wrap>
                             <FrameworkTag skill={'Express JS'} />
+                            <FrameworkTag skill={'Node JS'} />
                             <FrameworkTag skill={'React JS'} />
                             <FrameworkTag skill={'Flutter'} />
+                            <FrameworkTag skill={'React Native'} />
                             <FrameworkTag skill={'Next JS'} />
                             <FrameworkTag skill={'Django'} />
-                            <FrameworkTag skill={'Fastify'} />
+                            <FrameworkTag skill={'Flask'} />
+                            <FrameworkTag skill={'Firebase'} />
+                            <FrameworkTag skill={'Mysql'} />
+                            <FrameworkTag skill={'Graphql'} />
+
+
                         </Wrap>
 
                     </Box>
+                    
+                    
                     <Box my={5}>
-                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}> Other Tools</Heading>
+                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}>Devops</Heading>
 
                         <Box orientation='horizontal' bgColor='gray.300' my={2} height={0.2} />
 
                         <Wrap>
-                            <ToolTag skill={'Postman'} />
-                            <ToolTag skill={'VS Code'} />
-                            <ToolTag skill={'Insomnia'} />
+                            <ToolTag skill={'AWS (EC2,Lambda)'} />
+                            <ToolTag skill={'CICD'} />
+                            <ToolTag skill={'Linux'} />
                             <ToolTag skill={'Git'} />
                             <ToolTag skill={'Github'} />
-                            <ToolTag skill={'Bitbucket'} />
-                            <ToolTag skill={'Scrum'} />
                         </Wrap>
 
                     </Box>
