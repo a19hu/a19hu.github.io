@@ -22,13 +22,13 @@ const milestones = [
     {
         id: 2,
         date: 'Feb, 2021',
-        title: 'A React Medical Application',
+        title: 'IITJ Family Tree ',
         description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
     },
     {
         id: 3,
-        date: '2022',
-        title: 'E-Learning App (Ongoing)',
+        date: 'December/2023',
+        title: 'Aptos (Inter IIT)',
         description:
             'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.'
     }
