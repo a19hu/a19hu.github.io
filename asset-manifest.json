@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/a19hu.github.io/static/css/main.1770cf2c.css",
+    "main.js": "/a19hu.github.io/static/js/main.d0b5b5ac.js",
+    "index.html": "/a19hu.github.io/index.html",
+    "main.1770cf2c.css.map": "/a19hu.github.io/static/css/main.1770cf2c.css.map",
+    "main.d0b5b5ac.js.map": "/a19hu.github.io/static/js/main.d0b5b5ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1770cf2c.css",
+    "static/js/main.d0b5b5ac.js"
+  ]
+}
