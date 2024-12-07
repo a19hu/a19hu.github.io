@@ -5,6 +5,7 @@ import Education from './Education'
  
 
 export default function Banner() {
+    const resumeUrl = process.env.REACT_APP_RESUME_URL;
     return (
         <Container maxW={'7xl'} alignItems='center' my={5}>
             <Flex width={'100%'} maxW={['full', 'full', '7xl']} justifyContent='center' alignItems={'center'} flexDir={['column', 'column', 'row', 'row']}>
@@ -93,7 +94,7 @@ export default function Banner() {
                     </Box>
                     <Box orientation='horizontal' bgColor='gray.300' my={4} height={0.2} />
                     <Link
-                        href="https://drive.google.com/file/d/1HXNk4AslJ5RMit6o5Y-WdSapyS1s4XkQ/view?usp=sharing" 
+                        href={resumeUrl || "https://prometeo.in"} 
                         isExternal
                         >
                         <Button

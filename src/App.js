@@ -46,7 +46,7 @@ function App() {
       once: true,
     });
   }, []);
-
+  
   return (
     <ChakraProvider theme={theme}>
       <Banner />
