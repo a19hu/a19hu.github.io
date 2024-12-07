@@ -8,30 +8,40 @@ import {
     VStack,
     Flex,
     useColorModeValue,
-    useBreakpointValue
+    useBreakpointValue,
+    IconButton,
+    Tag
 } from '@chakra-ui/react';
+import { FiExternalLink } from "react-icons/fi";
+
 
 const milestones = [
     {
         id: 1,
         date: 'Jun/24- ongoing',
         title: 'KBCLOUDTECH PRIVATE LIMITED',
+        subtitle:"Software Developer Intern",
         description: `Developed and tested frontend applications using Next.js and Flutter, integrating Firebase for real-time databases,
-authentication, and push notifications.`
+            authentication, and push notifications.`,
+        link:""
     },
     {
         id: 2,
-        date: 'Jan/24',
+        date: 'Dec/24',
         title: 'Prometeo',
-        description: `Designed and developed a dynamic and interactive website interface for the Prometeo fest.`
+        subtitle:"IITJ Fest Head",
+        description: `Designed and developed a dynamic and interactive website interface for the Prometeo fest .`,
+        link:"https://www.prometeo.in"
     },
-    // {
-    //     id: 3,
-    //     date: 'July 30, 2020',
-    //     title: 'Completed Graduation',
-    //     description:
-    //         'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
-    // },
+    {
+        id: 3,
+        date: 'Jan/23',
+        title: 'Prometeo',
+        subtitle:"IITJ Fest AH",
+        description:
+            `Designed and developed a dynamic and interactive website interface for the Prometeo fest .`,
+        link:"https://www.prometeo.in"
+    },
     // {
     //     id: 4,
     //     date: 'July 30, 2022',
@@ -103,7 +113,7 @@ const Education = () => {
 
 
 
-const Card = ({ id, title, description, date }) => {
+const Card = ({ id, title, description, date,link,subtitle }) => {
     // For even id show card on left side
     // For odd id show card on right side
     const isEvenId = id % 2 === 0;
@@ -145,12 +155,23 @@ const Card = ({ id, title, description, date }) => {
                     {date}
                 </Text>
 
-                <VStack spacing={2} mb={3} textAlign="left">
+                <VStack spacing={2} mb={3} textAlign="left" justifyItems={"center"}>
                     <chakra.h1 fontSize="xl" lineHeight={1.2} fontWeight="bold" w="100%">
                         {title}
+                    <Tag marginLeft={2} variant={'subtle'}>{subtitle}</Tag>
                     </chakra.h1>
                     <Text fontSize="sm">{description}</Text>
+                    {/* <Text fontSize="sm">{su}</Text> */}
+
                 </VStack>
+                { link.length > 0 &&
+                <IconButton as="a"
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub" 
+                            _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '0px solid', borderColor: 'primary.700' }}><FiExternalLink size={15} /></IconButton>
+                }
             </Box>
         </HStack>
     );

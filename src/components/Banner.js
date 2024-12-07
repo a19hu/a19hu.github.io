@@ -1,6 +1,6 @@
 import { Box, ButtonGroup, Container, Flex, Heading, HStack, IconButton, Image, Tag, Text, VStack,Button,Link} from '@chakra-ui/react'
 import React from 'react'
-import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import Education from './Education'
  
 
@@ -35,7 +35,7 @@ export default function Banner() {
                         <VStack spacing={6} alignItems='start'>
                             <HStack>
                                 <Box me={2}>
-                                    <IconButton href={'mailto:b22cs015@iitj.ac.in'}
+                                    <IconButton  as="a" href="mailto:b22cs015@iitj.ac.in"
                         target="_blank" shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaEnvelope /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>
@@ -69,7 +69,7 @@ export default function Banner() {
 
                             <HStack>
                                 <Box me={2}>
-                                    <IconButton href="https://www.linkedin.com/in/ashutosh-kumar-5aa3b3259/"
+                                    <IconButton as="a" href="https://www.linkedin.com/in/ashutosh-kumar-5aa3b3259/"
                         target="_blank" shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaLinkedin /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>
@@ -80,7 +80,7 @@ export default function Banner() {
 
                             <HStack>
                                 <Box me={2}>
-                                    <IconButton href="https://x.com/ASHUTOSHKU86831?t=hT0hZyKj5BvRuJtyeCKY4Q&s=09"
+                                    <IconButton as="a" href="https://x.com/ASHUTOSHKU86831?t=hT0hZyKj5BvRuJtyeCKY4Q&s=09"
                         target="_blank" shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaTwitter /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>

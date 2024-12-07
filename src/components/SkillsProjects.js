@@ -77,6 +77,7 @@ export default function SkillsProjects() {
                             <ToolTag skill={'Linux'} />
                             <ToolTag skill={'Git'} />
                             <ToolTag skill={'Github'} />
+                            <ToolTag skill={'Kubernetes'} />
                         </Wrap>
 
                     </Box>

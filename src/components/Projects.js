@@ -9,29 +9,74 @@ import {
     Flex,
     useColorModeValue,
     useBreakpointValue,
-    Tag
+    Tag,
+    IconButton,
+    ButtonGroup
 } from '@chakra-ui/react';
+import {FaGithub } from 'react-icons/fa'
+import { FiExternalLink } from "react-icons/fi";
+
 
 const milestones = [
     {
         id: 1,
-        date: '2020',
-        title: 'Simple e-Commerce Website',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
+        date: 'December-2024',
+        title: 'Bolt Clone',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        gihtub:"https://github.com/a19hu/Bolt_clone",
+        link:"",
+        techstack:["React"]
     },
     {
         id: 2,
-        date: 'Feb, 2021',
-        title: 'IITJ Family Tree ',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
+        date: 'October-2024',
+        title: 'Research visualisation',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        gihtub:"https://github.com/a19hu/Research_visualisation",
+        link:"",
+        techstack:[]
     },
+    
     {
         id: 3,
-        date: 'December/2023',
+        date: 'August-2024',
+        title: 'MIPS Compiler',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        gihtub:"https://github.com/a19hu/MIPS_Compiler",
+        link:"",
+        techstack:[]
+    },
+    
+   
+    {
+        id: 4,
+        date: 'May-2024',
+        title: 'Proxyproof Creal',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        gihtub:"https://github.com/a19hu/Proxyproof-Creal_-",
+        link:"",
+        techstack:[]
+    },
+    {
+        id: 5,
+        date: 'March-2024',
+        title: 'IITJ Family Tree ',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        gihtub:"",
+        link:"",
+        techstack:[]
+    },
+    {
+        id: 6,
+        date: 'December-2023',
         title: 'Aptos (Inter IIT)',
         description:
-            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.'
-    }
+            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.',
+        gihtub:"",
+        link:"",
+        techstack:[]
+    },
+    
 ];
 
 const Projects = () => {
@@ -96,7 +141,7 @@ const Projects = () => {
 
 
 
-const Card = ({ id, title, description, date }) => {
+const Card = ({ id, title, description, date,gihtub,link,techstack }) => {
     // For even id show card on left side
     // For odd id show card on right side
     const isEvenId = id % 2 === 0;
@@ -144,11 +189,28 @@ const Card = ({ id, title, description, date }) => {
                     </chakra.h1>
                     <Text fontSize="sm">{description}</Text>
                 </VStack>
-
+                <ButtonGroup justifyContent={'center'} alignItems={'center'} variant='ghost' spacing={1.9} marginBottom={2}>
+                        <IconButton as="a"
+                            href={gihtub}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub" 
+                            _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FaGithub size={20} /></IconButton>
+                        <IconButton 
+                        as="a"
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FiExternalLink size={20} /></IconButton>
+                    </ButtonGroup>
                 <HStack>
-                    <Tag variant={'subtle'}>Flutter</Tag>
-                    <Tag variant={'subtle'}>React</Tag>
+                    {techstack.map(items=>{
+                    return <Tag variant={'subtle'}>{items}</Tag>
+                    })}
                 </HStack>
+
+                
             </Box>
         </HStack>
     );
