@@ -36,7 +36,7 @@ accurate, web layouts effortlessly`,
         description: `Students often don’t know which professor is working in which research area. This lack of clarity makes it hard to align their interests with professors.
         \n While professors’ research topics are available on the IITJ website, they are scattered across multiple pages. This makes it time-consuming and difficult for students to find relevant opportunities.`,
         gihtub:"https://github.com/a19hu/Research_visualisation",
-        link:"",
+        link:"https://a19hu.my.canva.site/",
         techstack:["React","Flutter","Neo4j","FastAPI"]
     },
 
