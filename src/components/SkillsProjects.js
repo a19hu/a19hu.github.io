@@ -64,8 +64,8 @@ export default function SkillsProjects() {
                         </Wrap>
 
                     </Box>
-                    
-                    
+
+
                     <Box my={5}>
                         <Heading textAlign={'start'} as='h4' fontSize={'lg'}>Devops</Heading>
 
@@ -77,6 +77,7 @@ export default function SkillsProjects() {
                             <ToolTag skill={'Linux'} />
                             <ToolTag skill={'Git'} />
                             <ToolTag skill={'Github'} />
+                            <ToolTag skill={'Docker'} />
                             <ToolTag skill={'Kubernetes'} />
                         </Wrap>
 

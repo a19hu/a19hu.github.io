@@ -22,61 +22,70 @@ const milestones = [
         id: 1,
         date: 'December-2024',
         title: 'Bolt Clone',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        description: `Created a web-based AI-powered platform that enables users to generate fully functional websites in real time
+using natural language prompts. The system leverages advanced AI models to interpret user input and produce
+accurate, web layouts effortlessly`,
         gihtub:"https://github.com/a19hu/Bolt_clone",
-        link:"",
-        techstack:["React"]
+        link:"https://bolt-zeta-three.vercel.app/",
+        techstack:["React","Express","Node","OpenAI"]
     },
     {
         id: 2,
         date: 'October-2024',
         title: 'Research visualisation',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        description: `Students often don’t know which professor is working in which research area. This lack of clarity makes it hard to align their interests with professors.
+        \n While professors’ research topics are available on the IITJ website, they are scattered across multiple pages. This makes it time-consuming and difficult for students to find relevant opportunities.`,
         gihtub:"https://github.com/a19hu/Research_visualisation",
         link:"",
-        techstack:[]
+        techstack:["React","Flutter","Neo4j","FastAPI"]
     },
-    
+
     {
         id: 3,
         date: 'August-2024',
         title: 'MIPS Compiler',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        description: `MIPS ( Million Instructions Per Second ) processor simulator written in Rust. The project was developed as part of a Computer Architecture assignment, focusing on the simulation and testing of MIPS instructions. The simulator supports multiple stages of MIPS instruction execution, including instruction fetch, decode, execution, memory access, and write-back.`,
         gihtub:"https://github.com/a19hu/MIPS_Compiler",
         link:"",
-        techstack:[]
+        techstack:['RUST']
     },
-    
-   
+
+
     {
         id: 4,
         date: 'May-2024',
         title: 'Proxyproof Creal',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+        description: `Developed a real-time attendance verification system utilizing face recognition and dual-camera authentication to
+prevent proxy attendance. The system features an interactive attendance dashboard, allowing seamless leave
+requests and efficient student data management.`,
         gihtub:"https://github.com/a19hu/Proxyproof-Creal_-",
-        link:"",
-        techstack:[]
+        link:"https://www.youtube.com/watch?v=KlKf7AiV8WU&themeRefresh=1",
+        techstack:[,"Flutter","Firebase"]
     },
     {
         id: 5,
         date: 'March-2024',
         title: 'IITJ Family Tree ',
-        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
-        gihtub:"",
-        link:"",
-        techstack:[]
+        description: `"IITJ Family Tree" application, showcasing the profiles and relationships of IIT Jodhpur students with their
+seniors, reflecting the institution’s cultural essence and community spirit. The application has been widely
+adopted, with over 1000+ users engaging with it.`,
+        gihtub:"https://github.com/a19hu/iitj_family_tree",
+        link:"https://devluplabs.iitj.ac.in/familytree/",
+        techstack:["Reactjs","Django","Postgresql"]
     },
     {
         id: 6,
         date: 'December-2023',
         title: 'Aptos (Inter IIT)',
         description:
-            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.',
-        gihtub:"",
-        link:"",
-        techstack:[]
+            `Built a Spotify-inspired application that uses the Aptos blockchain for seamless transactions, using Move
+language for smart contracts and ReactJS for the front end. The platform enables users to pay a small fee to
+play songs, and artists earn coins based on user engagement and interactions.`,
+        gihtub:"https://github.com/a19hu/inter-iit-blockchain",
+        link:"https://drive.google.com/file/d/1H1MAqh3bEju-_b0A9G0cdCyGYPASslOW/view",
+        techstack:['ReactJS',"Aptos(Blockchain)"]
     },
-    
+
 ];
 
 const Projects = () => {
@@ -194,15 +203,17 @@ const Card = ({ id, title, description, date,gihtub,link,techstack }) => {
                             href={gihtub}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="GitHub" 
+                            aria-label="GitHub"
                             _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FaGithub size={20} /></IconButton>
-                        <IconButton 
+                        {link.length>0 &&
+                        <IconButton
                         as="a"
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Instagram"
                         _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FiExternalLink size={20} /></IconButton>
+}
                     </ButtonGroup>
                 <HStack>
                     {techstack.map(items=>{
@@ -210,7 +221,7 @@ const Card = ({ id, title, description, date,gihtub,link,techstack }) => {
                     })}
                 </HStack>
 
-                
+
             </Box>
         </HStack>
     );

@@ -21,8 +21,10 @@ const milestones = [
         date: 'Jun/24- ongoing',
         title: 'KBCLOUDTECH PRIVATE LIMITED',
         subtitle:"Software Developer Intern",
-        description: `Developed and tested frontend applications using Next.js and Flutter, integrating Firebase for real-time databases,
-            authentication, and push notifications.`,
+        description: `Currently interning as a developer, creating 4+ websites and mobile applications using ReactJS, NextJS, and
+Flutter, with Firebase as the primary database solution for real-time data management and messaging.
+\n \nCollaborated on debugging and resolving issues in existing applications, ensuring optimal performance and seamless
+functionality`,
         link:""
     },
     {
@@ -30,18 +32,19 @@ const milestones = [
         date: 'Dec/24',
         title: 'Prometeo',
         subtitle:"IITJ Fest Head",
-        description: `Designed and developed a dynamic and interactive website interface for the Prometeo fest .`,
+        description: `Developed website for Prometeo, the technical fest of IIT Jodhpur, using React.js and Django, enabling 1200+
+students to register and participate in events seamlessly also managed all aspects of deployment and performance.`,
         link:"https://www.prometeo.in"
     },
-    {
-        id: 3,
-        date: 'Jan/23',
-        title: 'Prometeo',
-        subtitle:"IITJ Fest AH",
-        description:
-            `Designed and developed a dynamic and interactive website interface for the Prometeo fest .`,
-        link:"https://www.prometeo.in"
-    },
+    // {
+    //     id: 3,
+    //     date: 'Jan/23',
+    //     title: 'Prometeo',
+    //     subtitle:"IITJ Fest AH",
+    //     description:
+    //         `Designed and developed a dynamic and interactive website interface for the Prometeo fest .`,
+    //     link:"https://www.prometeo.in"
+    // },
     // {
     //     id: 4,
     //     date: 'July 30, 2022',
@@ -169,7 +172,7 @@ const Card = ({ id, title, description, date,link,subtitle }) => {
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="GitHub" 
+                            aria-label="GitHub"
                             _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '0px solid', borderColor: 'primary.700' }}><FiExternalLink size={15} /></IconButton>
                 }
             </Box>
