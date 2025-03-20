@@ -19,6 +19,29 @@ import { FiExternalLink } from "react-icons/fi";
 
 const milestones = [
     {
+        id: 7,
+        date: 'March-2025',
+        title: 'Personality Prediction from Social Media Text',
+        description:
+            `Developed an AI-powered app to extract WhatsApp chat data and analyze personality traits.Utilized LLaMA
+models via Ollama for NLP-based personality prediction.Implemented text preprocessing, embeddings, and RAG
+for accurate insights.`,
+        gihtub:"https://github.com/a19hu/Personality_Prediction_Social_Media_text",
+        link:"https://drive.google.com/file/d/1FwUBjHhowKQEPvMO9VxYRETXsi71my_b/view",
+        techstack:['Flutter',"Sqlite","Ollama"]
+    },
+    {
+        id: 6,
+        date: 'February-2025',
+        title: 'Face Tracker',
+        description:
+            `Developed a real-time face tracking system in a Next.js application using the device camera, integrating a machine learning model via API
+             for dynamic face detection and tracking, and optimized performance for smooth real-time tracking with minimal latency.`,
+        gihtub:"https://github.com/a19hu/face-tracker",
+        link:"https://facetracker-amber.vercel.app/",
+        techstack:["Nextjs","Model","API"]
+    },
+    {
         id: 1,
         date: 'December-2024',
         title: 'Bolt Clone',
