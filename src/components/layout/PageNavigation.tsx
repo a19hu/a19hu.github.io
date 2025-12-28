@@ -2,10 +2,8 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "About", path: "/" },
-  { name: "Resume", path: "/resume" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
+  { name: "Experience", path: "/experience" },
+  { name: "Projects", path: "/projects" },
 ];
 
 const PageNavigation = () => {

@@ -1,21 +1,22 @@
-import { Mail, Phone, Calendar, MapPin, Terminal } from "lucide-react";
+import { Mail, Phone, Linkedin, Terminal, Github } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail, label: "EMAIL", value: "alex@example.com" },
-  { icon: Phone, label: "PHONE", value: "+1 (555) 123-4567" },
-  { icon: Calendar, label: "BIRTHDAY", value: "March 15, 1995" },
-  { icon: MapPin, label: "LOCATION", value: "San Francisco, CA" },
+  { icon: Mail, label: "EMAIL", value: "a19hu.k@gmail.com" },
+  { icon: Phone, label: "PHONE", value: "+91 6207705193" },
+  { icon: Github, label: "GITHUB", value: "a19hu" },
+  { icon: Linkedin, label: "LINKEDIN", value: "a19hu" },
 ];
 
 const socialLinks = [
-  { name: "GitHub", url: "https://github.com", icon: "github" },
-  { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-  { name: "Twitter", url: "https://twitter.com", icon: "twitter" },
+  { name: "GitHub", url: "https://github.com/a19hu", icon: "github" },
+  { name: "LinkedIn", url: "https://linkedin.com/in/a19hu", icon: "linkedin" },
+  { name: "Twitter", url: "https://twitter.com/a19hu", icon: "twitter" },
 ];
 
 const Sidebar = () => {
+  const resumeUrl = import.meta.env.VITE_APP_RESUME_URL;
   return (
-    <aside className="w-full lg:w-80 lg:min-h-screen bg-card border border-border rounded-3xl p-8 flex flex-col items-center lg:sticky lg:top-8 terminal-glow">
+    <aside className="w-full lg:w-80 lg:max-h-min bg-card border border-border rounded-3xl p-8 flex flex-col items-center lg:sticky lg:top-8 terminal-glow">
       {/* Terminal Header */}
       <div className="w-full flex items-center gap-2 mb-6 pb-4 border-b border-border">
         <div className="flex gap-1.5">
@@ -40,15 +41,12 @@ const Sidebar = () => {
       </div>
 
       {/* Name and Role */}
-      <h1 className="text-2xl font-semibold text-foreground mb-2">Alex Kumar</h1>
+      <h1 className="text-2xl font-semibold text-foreground mb-2">Ashutosh kumar</h1>
       <span className="px-4 py-1.5 bg-secondary border border-primary/30 rounded-lg text-sm text-primary mb-8 font-mono">
         &lt;Full Stack Dev /&gt;
       </span>
-
-      {/* Divider */}
       <div className="w-full h-px bg-border mb-8" />
 
-      {/* Contact Info */}
       <div className="w-full space-y-5 mb-8">
         {contactInfo.map((item) => (
           <div key={item.label} className="flex items-center gap-4">
@@ -62,6 +60,18 @@ const Sidebar = () => {
           </div>
         ))}
       </div>
+          <a
+              href={resumeUrl || "https://drive.google.com/file/d/1MLt2M4vzbX5LEbIAvWZFVPZsO39z_bp7/view?usp=sharing"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-10 rounded-lg bg-secondary border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center text-muted-foreground mb-5"
+          >
+            <div className="flex items-center justify-center gap-1 mb-0 text-sm font-mono h-full">
+              resume.tsx
+            </div>
+         </a>
+      
+      
 
       {/* Social Links */}
       <div className="flex gap-4 mt-auto">

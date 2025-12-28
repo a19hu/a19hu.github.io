@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { ExternalLink, Github, FolderGit2 } from "lucide-react";
-
-const categories = ["All", "Web", "Mobile", "Backend"];
+import { ExternalLink, Github, FolderGit2,Briefcase } from "lucide-react";
 
 const projects = [
   {
     title: "E-Commerce Platform",
     category: "Web",
-    description: "Full-stack e-commerce solution with React and Node.js",
+    description: "Developed an AI-powered app to extract WhatsApp chat data and analyze personality traits.Utilized LLaMA models via Ollama for NLP-based personality prediction.Implemented text preprocessing, embeddings, and RAG for accurate insights.",
     image: "🛒",
     tags: ["React", "Node.js", "MongoDB"],
     github: "#",
@@ -68,47 +66,27 @@ const Portfolio = () => {
     : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="space-y-8 scrollbar-thin overflow-y-auto">
-      {/* Page Title */}
-      <div className="code-block">
-        <div className="flex items-center gap-2 mb-2 text-muted-foreground text-sm font-mono">
-          <FolderGit2 className="w-4 h-4 text-primary" />
-          <span>~/projects</span>
+    <div className="space-y-7 scrollbar-thin overflow-y-auto">
+      <div className="flex items-center gap-2 mb-4 text-muted-foreground text-sm font-mono">
+          <span className="text-primary">//</span> project.tsx
         </div>
-        <h2 className="text-3xl font-bold text-foreground mb-2">
-          <span className="text-primary">git</span> log --oneline
-        </h2>
-        <div className="w-12 h-1 bg-primary rounded-full" />
-      </div>
 
-      {/* Category Filter */}
-      <div className="flex flex-wrap gap-2">
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setActiveCategory(category)}
-            className={`px-5 py-2 rounded-xl text-sm font-mono transition-all duration-300 border ${
-              activeCategory === category
-                ? "bg-primary text-primary-foreground border-primary glow-primary"
-                : "bg-secondary text-muted-foreground hover:text-primary hover:border-primary/50 border-border"
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      
+      <div className="space-y-6 
+      max-h-[800px] overflow-y-auto pr-2" style={{ scrollbarWidth: 'thin', scrollbarColor: 'hsl(142 70% 45% / 0.5) transparent' }}
+      >
         {filteredProjects.map((project) => (
           <div
             key={project.title}
-            className="group code-block hover:border-primary/50 transition-all duration-300"
+            className="relative pl-8 pb-6 border-l-2 border-primary/30 last:pb-0"
           >
+              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary glow-primary" />
+          <section className="code-block">
+
             {/* Project Image */}
-            <div className="h-32 bg-secondary border border-border rounded-xl flex items-center justify-center text-5xl mb-4 group-hover:border-primary/30 transition-colors">
+            {/* <div className="h-32 bg-secondary border border-border rounded-xl flex items-center justify-center text-5xl mb-4 group-hover:border-primary/30 transition-colors">
               {project.image}
-            </div>
+            </div> */}
 
             {/* Project Info */}
             <div>
@@ -152,8 +130,10 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+          </section>
           </div>
         ))}
+        
       </div>
     </div>
   );

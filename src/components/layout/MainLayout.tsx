@@ -10,7 +10,7 @@ const MainLayout = () => {
         <Sidebar />
 
         {/* Main Content Area */}
-        <main className="flex-1 min-h-screen lg:pl-4">
+        <main className="flex-1 max-h-screen lg:pl-4">
           <div className="bg-card border border-border rounded-3xl p-6 lg:p-8 terminal-glow animate-fade-in">
             <PageNavigation />
             <Outlet />
