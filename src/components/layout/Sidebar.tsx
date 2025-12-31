@@ -61,7 +61,7 @@ const Sidebar = () => {
         ))}
       </div>
           <a
-              href={resumeUrl || "https://drive.google.com/file/d/1MLt2M4vzbX5LEbIAvWZFVPZsO39z_bp7/view?usp=sharing"}
+              href={resumeUrl || "https://drive.google.com/file/d/1OvB2q7vNKcHdzp1tsUYFc6q7pY0zK7XT/view?usp=sharing"}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full h-10 rounded-lg bg-secondary border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center text-muted-foreground mb-5"
