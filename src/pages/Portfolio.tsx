@@ -4,6 +4,16 @@ import { ExternalLink, Github, FolderGit2, Briefcase } from "lucide-react";
 const projects = [
   {
     id: 1,
+    date: "Ongoing",
+    title: "Collune",
+    description:
+      "Collune is a creator–brand collaboration platform where brands can create campaigns, discover creators, manage applications, deliverables, approvals, contracts, and campaign performance.It includes real-time chat between brands, creators, and internal teams, plus notifications for messages, campaign updates, approvals, deadlines, payments, and other important activities.",
+    github: "https://github.com/a19hu/Collune",
+    demo: "https://collune.com",
+    tags: ["ReactJS", "Django", "PostgreSQL", "Docker", "Redis", "GCP"],
+  },
+  {
+    id: 2,
     date: "March-2025",
     title: "Personality Prediction from Social Media Text",
     description:
@@ -13,7 +23,7 @@ const projects = [
     tags: ["Flutter", "Sqlite", "Ollama"],
   },
   {
-    id: 2,
+    id: 3,
     date: "February-2025",
     title: "Face Tracker",
     description:
@@ -23,7 +33,7 @@ const projects = [
     tags: ["Nextjs", "Model", "API"],
   },
   {
-    id: 3,
+    id: 4,
     date: "December-2024",
     title: "Bolt Clone",
     description:
@@ -33,7 +43,7 @@ const projects = [
     tags: ["React", "Express", "Node", "OpenAI"],
   },
   {
-    id: 4,
+    id: 5,
     date: "October-2024",
     title: "Research Visualisation",
     description:
@@ -43,7 +53,7 @@ const projects = [
     tags: ["React", "Flutter", "Neo4j", "FastAPI"],
   },
   {
-    id: 5,
+    id: 6,
     date: "August-2024",
     title: "MIPS Compiler",
     description:
@@ -53,7 +63,7 @@ const projects = [
     tags: ["RUST"],
   },
   {
-    id: 6,
+    id: 7,
     date: "May-2024",
     title: "Proxyproof Creal",
     description:
@@ -63,7 +73,7 @@ const projects = [
     tags: ["Flutter", "Firebase"],
   },
   {
-    id: 7,
+    id: 8,
     date: "March-2024",
     title: "IITJ Family Tree",
     description:
@@ -73,7 +83,7 @@ const projects = [
     tags: ["Reactjs", "Django", "Postgresql"],
   },
   {
-    id: 8,
+    id: 9,
     date: "December-2023",
     title: "Aptos (Inter IIT)",
     description:

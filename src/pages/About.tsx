@@ -13,7 +13,7 @@ const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
-    skills: ["Python", "C", "C++", "Bash", "Javascript", "Dart", "HTML", "CSS"],
+    skills: ["Python", "Bash", "Javascript", "Dart", "HTML", "CSS"],
   },
   {
     title: "Frameworks",
@@ -35,7 +35,7 @@ const skillCategories = [
   {
     title: "Tools & DevOps",
     icon: Wrench,
-    skills: ["AWS (EC2, Lambda)", "CI/CD", "Linux", "Git", "Github", "Docker"],
+    skills: ["GCP", "AWS", "CI/CD", "Linux", "Git", "Github", "Docker"],
   },
 ];
 
@@ -53,18 +53,7 @@ const About = () => {
         <div className="w-12 h-1 bg-primary rounded-full mb-6" />
         
         <div className="space-y-4 text-muted-foreground leading-relaxed pl-4 border-l-2 border-primary/30">
-        Hi, I'm Ashutosh Kumar, an engineering student at IIT Jodhpur. I experiment with various tech stacks and have developed proficiency in several. My expertise is in web development, 
-        where I excel in both front-end and back-end development and also devops.
-          {/* <p>
-            I'm a <span className="text-primary">Full Stack Developer</span> and system architect from San Francisco, 
-            passionate about building efficient, scalable, and maintainable software solutions.
-          </p>
-          <p>
-            
-            My expertise spans across <span className="text-foreground">frontend</span>, <span className="text-foreground">backend</span>, and <span className="text-foreground">DevOps</span> - 
-            creating end-to-end solutions that are both powerful and elegant. I believe in writing 
-            clean code that speaks for itself.
-          </p> */}
+        Hi, I'm Ashutosh Kumar, a Computer Science and Engineering graduate from IIT Jodhpur. I enjoy exploring and working with a variety of technologies and have developed strong proficiency across multiple tech stacks. My primary expertise lies in full-stack web development, including both front-end and back-end development, along with DevOps practices and deployment workflows.
         </div>
       </section>
 
